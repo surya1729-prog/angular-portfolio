@@ -1,0 +1,6 @@
+/* Main wrapper below navbar */
+.content {
+  padding-top: 80px;   /* height of fixed navbar */
+  min-height: 100vh;
+  overflow-x: hidden;
+}

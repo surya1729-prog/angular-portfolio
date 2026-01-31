@@ -1,0 +1,67 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f8fafc;
+  scroll-behavior: smooth;
+
+  /* Space for fixed navbar */
+  padding-top: 80px;
+}
+
+/* Sections (NO forced centering now) */
+section {
+  min-height: 100vh;
+  padding: 60px 8% 80px;
+}
+
+/* Headings */
+h1, h2 {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 18px;
+  color: #e0e7ff;
+}
+
+/* Paragraphs */
+p {
+  color: #cbd5f5;
+  line-height: 1.7;
+}
+
+/* =========================
+   Fade-in / Fade-out Scroll
+   ========================= */
+.fade-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   Mobile Responsiveness
+   ========================= */
+@media (max-width: 768px) {
+  section {
+    padding: 40px 6% 60px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}

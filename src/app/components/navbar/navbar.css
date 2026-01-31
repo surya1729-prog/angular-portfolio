@@ -1,0 +1,65 @@
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+/* Logo / Name – colorful & premium */
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    #00d9ff,
+    #6c63ff,
+    #22c55e
+  );
+
+  /* Standard + WebKit support */
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  /* Required for gradient text */
+  color: transparent;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00d9ff;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+}
